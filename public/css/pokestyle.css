@@ -11,6 +11,13 @@ a, p, h2, h3 {
   border-radius: 100px;
 }
 
+h2 {
+  margin: 20px;
+}
+
+a, p {
+  font-size: 24px;
+}
 
 body {
   background-image: url(../images/pokedex.png);
@@ -19,12 +26,14 @@ body {
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+  text-align: center;
 }
 
 a:hover {
   padding: 20px;
   animation: pulse 1s infinite;
 }
+
 .containareon, h1 {
   box-sizing: border-box;
   padding: 10px;
@@ -41,12 +50,53 @@ a:hover {
   padding: 10px;
   margin: 40px;
   box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
   border: 15px inset;
   border-radius: 100px;
   border-top-color: rgba(255, 0, 0, .5);
   border-left-color: rgba(255, 0, 0, .5);
   border-right-color: rgba(225, 225, 225, .5);
   border-bottom-color: rgba(225, 225, 225, .5);
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 24px;
+  text-align: center;
+}
+
+input[type=text] {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Pokemon", monospace;
+  letter-spacing: .25em;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input[type=submit] {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(215, 215, 0);
+  text-shadow: rgb(35, 75, 180) 3px 3px 1px;
+  -webkit-text-stroke: 2px rgb(55, 95, 200);
+  font-size: 24px;
+  font-family: "Pokemon", monospace;
+  padding: 10px;
+  letter-spacing: .25em;
+  cursor: pointer;
+  width: 200px;
+  border-radius: 100px;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type=submit]:hover {
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
