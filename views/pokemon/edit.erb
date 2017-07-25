@@ -1,0 +1,31 @@
+<h2>Edit <%= @pokemon.name %></h2>
+
+<form class="" action="/pokemon/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label>Name:</label>
+  <input type="text" name="pokemon[name]" value="<%= @pokemon.name %>">
+  <label>Combat Power:</label>
+  <input type="text" name="pokemon[cp]" value="<%= @pokemon.cp %>">
+  <label>Type:</label>
+  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
+  <label>Image:</label>
+  <input type="text" name="pokemon[img_url]" value="<%= @pokemon.img_url %>">
+  <input type="submit" value="Update">
+</form>
+
+<h2>Delete <%= @pokemon.name %></h2>
+
+<form class="" action="/pokemon/<%= @pokemon.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <!-- <label>Name:</label>
+  <input type="text" name="pokemon[name]" value="<%= @pokemon.name %>">
+  <label>Combat Power:</label>
+  <input type="text" name="pokemon[cp]" value="<%= @pokemon.cp %>">
+  <label>Type:</label>
+  <input type="text" name="pokemon[poke_type]" value="<%= @pokemon.poke_type %>">
+  <label>Image:</label>
+  <input type="text" name="pokemon[img_url]" value="<%= @pokemon.img_url %>"> -->
+  <input type="submit" value="Delete">
+</form>
+
+<h2><a href="/pokemon">return home</a></h2>
